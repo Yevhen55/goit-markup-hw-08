@@ -1,0 +1,43 @@
+.hero {
+    padding: 200px 0;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), url(../image/holst.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.hero__text {
+    @include text-hero ;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-footer-textbtn);
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.hero__btn {
+    @include text-btn;
+    line-height: 1.87;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--text-footer-textbtn);
+    background-color: var(--focus-hover-active-color);
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 0;
+    padding-top: 10px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 10px;
+}

@@ -1,0 +1,108 @@
+.container .list-benefits {
+    @media screen and (max-width:1200px){
+    display: flex;
+    }
+   
+}
+
+.icon-benefits {
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.list-benefits__items {
+& :nth-child(2n) {
+   @media screen and(min-width:479px) {
+    width: 50%;
+    margin-left: 30px;
+   
+    }
+    
+}
+
+    @media screen and (min-width:767px){
+        margin-left: 30px;
+        
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+   
+       
+        }
+
+
+
+.list-benefits__subject {
+    font-family: $text-Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.list-benefits__subtitle {
+    font-family: $text-Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--second-text-color);
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 270px;
+}
+
+/* чем мs занимаемся  */
+.paint {
+    padding-top: 0;
+}
+
+.list-img {
+    display: flex;
+}
+
+.list-img__over {
+    font-family:$text-Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--backgroundcolor-team);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    justify-content: center;
+    background: rgba(47, 48, 58, 0.8);
+    height: 70px;
+}
+
+.list-img__items {
+    position: relative;
+    margin-left: 30px;
+}
+
+.list-img__items:first-child {
+    margin-left: 0;
+}
+
+.list-img__img {
+    display: block;
+    max-width: 100%;
+}

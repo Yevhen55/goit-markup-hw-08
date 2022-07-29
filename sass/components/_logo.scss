@@ -1,0 +1,31 @@
+.nav .logo {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 93px;
+}
+
+.logo {
+    font-family: $text-Raleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.logo .acent-logo {
+    color: var(--focus-hover-active-color);
+}
+
+.logo {
+    color: var(--primary-text-color);
+}
+
+.logo-footer {
+    color: var(--text-footer-textbtn);
+}
+
+.body-list {
+    color: var(--primary-text-color);
+}

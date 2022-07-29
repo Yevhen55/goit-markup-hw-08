@@ -1,0 +1,277 @@
+/* Модальное окно  */
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.modal {
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 528px;
+    height: 581px;
+    transform: translate(-50%, -50%);
+    background-color: var(--backgroundcolor-team);
+    transform: scaleY(1) translate(-50%, -50%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 1;
+
+}
+
+.backdrop.is-hidden.modal {
+    transform: scale(1.1) translate(-50%, -50%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+}
+
+.modal-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 0;
+    border: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--backgroundcolor-team);
+    color: none;
+    cursor: pointer;
+}
+
+.icon-close {
+    fill: var(--primary-text-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.icon-close:hover,
+.icon-close:focus {
+    fill: var(--focus-hover-active-color)
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.modal-text {
+    font-family: $text-Roboto;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    margin-bottom: 12px;
+    margin-top: 0;
+
+}
+
+.form-field {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.form-field .form-label {
+    margin-bottom: 4px;
+    font-family:$text-Roboto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 1);
+
+}
+
+.form-field .form-input {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    width: 448px;
+    height: 40px;
+    padding-left: 42px;
+    outline: transparent;
+    cursor: pointer;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.form-field .commet {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-field textarea {
+    width: 448px;
+    height: 120px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    resize: none;
+    outline: transparent;
+
+}
+
+.radio {
+    margin-top: 20px;
+}
+
+.icon.input1 {
+    position: absolute;
+    bottom: 14px;
+    left: 15px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.icon.input2 {
+    position: absolute;
+    bottom: 13.74px;
+    left: 14.27px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.icon.input3 {
+    position: absolute;
+    bottom: 14px;
+    left: 13.5px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.label-checkbox {
+    font-family: $text-Roboto;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--second-text-color);
+
+
+}
+
+.modal-link {
+    width: 127.734px;
+    height: 23.93px;
+    color: var(--focus-hover-active-color);
+    font-family: $text-Roboto;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.button-modal {
+    font-family: $text-Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--text-footer-textbtn);
+    background-color: var(--focus-hover-active-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    padding-top: 10px;
+    padding-right: 56px;
+    padding-left: 55px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bottom {
+    margin: 0;
+}
+
+.text-email {
+    color: var(--backgroundcolor-team)
+}
+
+.commet:hover,
+.commet:focus {
+    border: 1px solid var(--focus-hover-active-color)
+}
+
+.form-input:hover+.icon,
+.form-input:focus+.icon {
+    fill: var(--focus-hover-active-color);
+}
+
+.form-input:hover,
+.form-input:focus {
+    border: 1px solid var(--focus-hover-active-color)
+}
+
+.form-field:hover .icon,
+.form-field:focus .icon {
+    fill: var(--focus-hover-active-color);
+}
+
+.radio {
+    display: flex;
+    align-items: center;
+}
+
+.visually-hidden {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+
+.modal-check {
+    margin-right: 8.38px;
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--primary-text-color);
+    border-radius: 4px;
+}
+
+.chechbox:checked+.modal-check {
+    border-color: var(--focus-hover-active-color);
+    background-color: var(--focus-hover-active-color);
+    background-image: url(../image/icon\ check\ \(1\).svg);
+    background-size: contain;
+    background-origin: border-box;
+}
+
+/* Модальное окно  */
+
+
+/* Модальное окно  */
+/* заголовки  */
+.text-section {
+    font-family: $text-Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 50px;
+}

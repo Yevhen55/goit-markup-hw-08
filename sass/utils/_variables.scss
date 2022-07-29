@@ -1,0 +1,38 @@
+:root {
+    --primary-text-color: #212121;
+    --second-text-color: #757575;
+    --focus-hover-active-color: #2196F3;
+    --text-footer-textbtn: #FFFFFF;
+    --fon-footer-h1: #2F303A;
+    --mail-tel: rgba(255, 255, 255, 0.6);
+    --backgroundcolor-team: #F5F4FA;
+}
+
+$text-Raleway:'Raleway';
+
+$text-Roboto :'Roboto';
+        
+
+@mixin text-hero{
+    font: {
+         family: 'Roboto';
+         weight: 900;
+         size: 44px;}
+}
+
+ @mixin text-btn{
+        font: { family:'Roboto';
+             weight: 700;
+        size: 16px;}
+        }
+
+ @mixin portfolio-btn {
+    font: { family: 'Roboto';
+        weight: 500;
+        size: 16px;
+        
+    }
+ }       
+
+
+
