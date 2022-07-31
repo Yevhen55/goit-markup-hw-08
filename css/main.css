@@ -49,6 +49,9 @@ ul {
   .section {
     padding-top: 60px;
     padding-bottom: 60px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media screen and (min-width: 768px) {
@@ -578,11 +581,13 @@ ul {
   margin-bottom: 50px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 768px) {
   .container .list-benefits {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -602,18 +607,25 @@ ul {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 479px) {
-  .list-benefits__items :nth-child(2n) {
-    width: 50%;
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .list-benefits__items {
+    margin-bottom: 30px;
+  }
+  .list-benefits__items:last-child {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .list-benefits__items:nth-child(-n+2) {
+    margin-bottom: 30px;
+  }
+  .list-benefits__items:nth-child(even) {
     margin-left: 30px;
   }
 }
-@media screen and (min-width: 767px) {
-  .list-benefits__items {
+@media screen and (min-width: 1200px) {
+  .list-benefits__items:nth-last-child(-n+3) {
     margin-left: 30px;
-  }
-  .list-benefits__items:first-child {
-    margin-left: 0;
   }
 }
 
@@ -639,12 +651,27 @@ ul {
   color: var(--second-text-color);
   margin-top: 0;
   margin-bottom: 0;
-  width: 270px;
+  width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .list-benefits__subtitle {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list-benefits__subtitle {
+    width: 270px;
+  }
 }
 
 /* чем мs занимаемся  */
 .paint {
   padding-top: 0;
+}
+@media screen and (max-width: 1199px) {
+  .paint {
+    display: none;
+  }
 }
 
 .list-img {

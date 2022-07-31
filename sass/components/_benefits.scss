@@ -1,40 +1,44 @@
-.container .list-benefits {
-    @media screen and (max-width:1200px){
-    display: flex;
-    }
-   
-}
-
-.icon-benefits {
-    background-color: #F5F4FA;
-    border-radius: 4px;
-    height: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-
-.list-benefits__items {
-& :nth-child(2n) {
-   @media screen and(min-width:479px) {
-    width: 50%;
-    margin-left: 30px;
-   
+ .container .list-benefits {
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-wrap: wrap;
     }
     
-}
+ }
 
-    @media screen and (min-width:767px){
-        margin-left: 30px;
-        
-            &:first-child {
-                margin-left: 0;
-            }
-        }
+ .icon-benefits {
+     background-color: #F5F4FA;
+     border-radius: 4px;
+     height: 120px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-bottom: 30px;
+ }
+
+ .list-benefits__items {
+    @media screen and(min-width:480px) and (max-width:767px) {margin-bottom: 30px;
+    &:last-child {margin-bottom: 0;}
+         
+       }
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        &:nth-child(-n + 2) {margin-bottom: 30px;}
+        &:nth-child(even) {margin-left: 30px;}
+    }
+
+        &:nth-last-child(-n + 3) {
+         @media screen and (min-width:1200px) {
+            margin-left: 30px;   
+    }
+     }
+ }
+     
    
-       
-        }
+    
+
+
+   
+   
 
 
 
@@ -60,12 +64,22 @@
     color: var(--second-text-color);
     margin-top: 0;
     margin-bottom: 0;
-    width: 270px;
+    width: 450px;
+    @media screen and (min-width:768px)  {
+        width: 354px;
+    }
+    @media screen and (min-width:1200px) { 
+       width:270px; 
+    }
 }
 
 /* чем мs занимаемся  */
 .paint {
     padding-top: 0;
+    @media screen and (max-width:1199px) {
+        display: none;
+        
+    }
 }
 
 .list-img {
