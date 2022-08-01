@@ -3,12 +3,43 @@
 }
 
 .list-team--display {
-    display: flex;
+    @media screen and (min-width:768px) {
+            display: flex;
+            flex-wrap: wrap;
+        }
 }
 
 
-.list-team__items+.list-team__items {
-    margin-left: 30px;
+.list-team__items {
+    @media screen and(min-width:480px) and (max-width:767px) {
+            margin-bottom: 30px;
+    
+            &:last-child {
+                margin-bottom: 0;
+            }
+    
+        }
+                
+            
+         
+        @media screen and (min-width:768px) and (max-width:1199px) {
+           
+            &:nth-child(-n + 2) {
+                margin-bottom: 30px;
+               
+            }
+    
+            &:nth-child(even) {
+                margin-left: 30px;
+            }
+            justify-content: center;
+        }
+    
+        &:nth-last-child(-n + 3) {
+            @media screen and (min-width:1200px) {
+                margin-left: 30px;
+            }
+        }
 }
 
 .list-team__items {
