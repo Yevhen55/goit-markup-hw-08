@@ -29,6 +29,11 @@ ul {
     
     padding-left: 0;
     padding-right: 0;
+    @media screen and (min-width: 320px) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+    
+        }
     @media screen and (min-width: 480px) {
         padding-top: 60px;
         padding-bottom:60px;

@@ -45,6 +45,12 @@ ul {
   padding-left: 0;
   padding-right: 0;
 }
+@media screen and (min-width: 320px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 @media screen and (min-width: 480px) {
   .section {
     padding-top: 60px;
@@ -253,6 +259,14 @@ ul {
   color: var(--text-footer-textbtn);
   margin-top: 0;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .hero__text {
+    font-size: 26px;
+    line-height: 1.61;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .hero__btn {
@@ -603,6 +617,11 @@ ul {
           justify-content: center;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 320px) {
+  .icon-benefits {
+    width: 100%;
+  }
+}
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .list-benefits__items {
@@ -654,6 +673,11 @@ ul {
   margin-top: 0;
   margin-bottom: 0;
   width: 450px;
+}
+@media screen and (min-width: 320px) {
+  .list-benefits__subtitle {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 768px) {
   .list-benefits__subtitle {
@@ -1126,6 +1150,11 @@ ul {
   cursor: pointer;
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 320px) {
+  .text-email {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 768px) {
   .text-email {

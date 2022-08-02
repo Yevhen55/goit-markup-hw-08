@@ -20,6 +20,12 @@
     color: var(--text-footer-textbtn);
     margin-top: 0;
     margin-bottom: 30px;
+
+    @media screen and (min-width:320px) and (max-width:1199px) {
+     font-size: 26px;  line-height: 1.61; width: 100%;text-align: center;
+    
+    }
+   
 }
 
 .hero__btn {
