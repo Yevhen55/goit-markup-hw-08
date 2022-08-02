@@ -18,12 +18,19 @@
     <header class="header-list">
         <div class="container nav">
         <a href="index.html" class="logo"><span class="acent-logo">Web</span>Studio</a>
-        <button type="button">
-            <svg width="40" height="40">
-                <use></use>
-                <use></use>
+        <button type="button" class="burger-button is-open" 
+        data-menu-button 
+        aria-expanded="false"
+        aria-controls="menu-container"
+        >
+            <svg width="40" height="40" aria-label="Switch mobile menu">
+                <use class="icon-menu"  href="./images/symbol-defs.svg#icon-menu_burger"  ></use>
+                <use class="icon-close" href="./images/symbol-defs.svg#icon-close_burger" ></use>
             </svg>
         </button>
+        <div class="menu-container is-open" id="menu-container" data-menu>
+hgcfghjk
+        </div>
         <nav class="nav-page">
          <ul class="site-nav">
                 <li class="nav-page__item"><a class="nav-page__link nav-page__link--current" href="index.html">Студия</a></li>
@@ -457,6 +464,7 @@
                 </svg></button>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
